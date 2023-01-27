@@ -1,0 +1,292 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    border: 1px solid #000;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+i.fa-solid.fa-plus.fa-style {
+    font-size: 20px;
+    color: black;
+}
+i.fa-solid.fa-minus.fa-style {
+    font-size: 20px;
+    color: black;
+}
+i.fa-solid.fa-plus.fa-style:hover {
+    color: blue;
+}
+i.fa-solid.fa-minus.fa-style:hover {
+    color: blue;
+}
+.wrapper_chitiet{
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+.hinhanh_sanpham{
+    float: left;
+    width: 30%;
+}
+.chitiet_sanpham{
+    float: left;
+    width: 49%;
+    margin:0 10px;
+}
+input.themgiohang {
+    border: none;
+    background: #ff0000;
+    color: #fff;
+    padding: 12px;
+    font-size: 15px;
+    cursor: pointer;
+}
+/* Header */
+.header{
+    height: 400px;
+    width: 100%;
+}
+@keyframes imgchange {
+    0% { background-image: url("https://sneakerdaily.vn/wp-content/uploads/2022/11/banner-sale-bac-ninh-1024x512.jpg.webp");}
+    25% { background-image: url("https://sneakerdaily.vn/wp-content/uploads/2022/10/z3839895842028_d9214b71bad73dd62b5339ce2757ae41-1024x512.jpg.webp");}
+    50% { background-image: url("https://sneakerdaily.vn/wp-content/uploads/2022/10/banner-crep-protect-1024x512.jpg.webp");}
+    75% { background-image: url("https://sneakerdaily.vn/wp-content/uploads/2022/10/banner-sprayground-1024x512.jpg.webp");}
+    100% { background-image: url("https://sneakerdaily.vn/wp-content/uploads/2022/10/banner-nike-golf-1024x512.jpg.webp");}
+}
+.header .imgchange{
+    height: 400px;
+    width: 80%;
+    background-size: 100% 400px;
+    float: left;
+    margin: -2px;
+    animation: imgchange 10s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+.header .imgsmalling{
+    height: 400px;
+    width: 19.5%;
+    float: right;
+    margin-left: 2px;
+}
+.header .imgsmalling img{
+    height: 127px;
+    width: 100%;
+    margin: 2px auto;
+}
+/* Menu */
+.menu{
+    height: 50px;
+    width: 100%;
+    background: #ffa64d;
+}
+.menu form.search {
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+.menu ul.list_menu {
+    padding: 0;
+    list-style-type: none;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 27px;
+}
+.menu ul.list_menu li:hover {
+    background: rgb(117, 2, 2);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+/* Thiết lập lớp giả khi hover */
+.menu ul.list_menu li a{
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    color: #ddd;
+}
+.menu ul.list_menu>li>a::before {
+    content: "";
+    background: #ddd;
+    height: 4px;
+    width: 0px;
+    position: absolute;
+    bottom: -9px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.menu ul.list_menu>li:hover>a::before {
+   width: 100%;
+}
+
+.menu ul.list_menu li {
+    position: relative;
+    float: left;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 7px;
+    padding: 5px;
+    border-radius: 8px;
+    background: #ff0000;
+}
+.menu ul.list_menu ul.submenu{
+    list-style-type: none;
+    background-color: #ff0000;
+    position: absolute;
+    padding: 15px 0px;
+    display: none;
+    width: 200px;
+    border-radius: 8px;
+    top: 35px
+}
+.menu ul.list_menu li:hover ul.submenu{
+    display: block;
+}
+.menu ul.list_menu ul.submenu a{
+    padding: 8px 15px;
+    border-bottom: 1px solid rgb(182, 179, 179);
+}
+.menu ul.list_menu li ul.submenu li{
+    text-transform: none;
+    font-weight: normal;
+    height: 17px;
+    line-height: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+}
+@keyframes lac {
+    0%{left: -10px;}
+    20%{left: 8px;}
+    40%{left: -6px;}
+    60%{left: 4px;}
+    80%{left: -2px;}
+    100%{left: 0px;}
+}
+.menu ul.list_menu>li>ul.submenu>li:hover{
+    color: #80bfff;
+    animation: lac 1s;
+}
+.menu ul.list_menu li ul.submenu li::before{
+    content: ">>";
+    padding-right: 5px;
+    font-size: 0.8rem;
+}
+/* Main */
+#main{
+    border: 1px solid #ff6666;
+    height: auto;
+    width: 100%;
+}
+.sidebar{
+    border: 1px solid #a166ff;
+    height: 390px;
+    width: 20%;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+ul.list_sidebar {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    line-height: 27px;
+}
+ul.list_sidebar li:hover {
+    background: cadetblue;
+}
+ul.list_sidebar li a {
+    text-decoration: none;
+    text-align: left;
+    color: #fff;
+    display: block;
+}
+ul.list_sidebar li {
+    margin: 7px;
+    padding: 5px;
+    border-radius: 8px;
+    background: #ff0000;
+}
+.maincontent{
+    
+    height: auto;
+    width: 78%;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: right;
+}
+ul.product_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+ul.product_list li {
+    width: 18%;
+    border: 1px solid #ddd;
+    margin: 5px;
+    float: left;
+    height: 350px;
+}
+ul.product_list li a {
+    text-decoration: none;
+}
+ul.product_list li img {
+    width: 100%;
+    height: 190px;
+}
+p.price_product {
+    text-align: center;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+p.title_product {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* Footer */
+.footer{
+    height: 200px;
+    background-color: #ff4d4d;
+    display: flex;
+}
+.footer-left{
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 100px auto;
+    display: flex;
+    color: #fff;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.footer-right
+{
+    padding: 600px auto;
+    margin: 32px 0 10px 10px;
+    color: #fff;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.footer-right-social
+{
+    display: flex;
+    height: 91px;
+    width: 457.5px;
+
+}
+.footer-right-social-media
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 25px;
+}
+/* Cắt chuỗi */
+.clear{
+    clear: both;
+}
